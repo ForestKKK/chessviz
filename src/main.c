@@ -18,3 +18,9 @@ int main()
                 char one_place[4], two_place [4];
                 printf("Введите координаты или (r) для рестарта: \n");
                 scanf("%s %s", one_place, two_place);
+                if (one_place[0] == 'r') {
+                    system("clear");
+                    exit = 1;
+                    main();
+                } else {
+                    exit = board_func(one_place, two_place);
