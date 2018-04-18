@@ -7,8 +7,14 @@ int main()
     int i = 0;
     while (i == 0) {
         char q;
-        printf("\t(s) Start or (q) Quit\n");
+        printf("\tНажмите (s) для старта или (q), чтобы выйти\n");
         printf("\t\t Command: ");
         scanf("%c", &q);
         printf_new_board();
-        if (q == 's')
+        if (q == 's') {
+            i = -1;
+            int exit = 0;
+            while (exit == 0) {
+                char one_place[4], two_place [4];
+                printf("Введите координаты или (r) для рестарта: \n");
+                scanf("%s %s", one_place, two_place);
