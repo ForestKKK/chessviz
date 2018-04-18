@@ -39,3 +39,18 @@ char **board()
 
 void print_new_board(char **arr)
 {
+    arr = board();
+    print_board(arr);
+}
+
+void print_board(char **arr)
+{
+
+    printf("\n");
+    for (int i = 0; i < 9; i++) {
+        for (int j = 0; j < 9; j++) {
+                printf("%3c", arr[i][j]);
+        }
+        printf("\n");
+    } 
+}
