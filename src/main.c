@@ -25,7 +25,7 @@ int main()
                 } else {
                     exit = board_func(one_place, two_place);
                     if (exit == -1) {
-                        printf_new board();
+                        print_new_board();
                         printf("\t Неверные координаты.\n");
                         exit = 0;
                     }
