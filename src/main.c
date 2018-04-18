@@ -31,4 +31,10 @@ int main()
                     }
                 }
             }
+        } else if (q == 'q') {
+            system("clear");
+            return 0;
         }
+    }
+    return 0;
+}
