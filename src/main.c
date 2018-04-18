@@ -24,3 +24,11 @@ int main()
                     main();
                 } else {
                     exit = board_func(one_place, two_place);
+                    if (exit == -1) {
+                        printf_new board();
+                        printf("\t Wrong coordinates!\n");
+                        exit = 0;
+                    }
+                }
+            }
+        }
