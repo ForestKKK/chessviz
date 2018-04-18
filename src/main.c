@@ -10,7 +10,7 @@ int main()
         printf("\tНажмите (s) для старта или (q), чтобы выйти\n");
         printf("\t\t Command: ");
         scanf("%c", &q);
-        printf_new_board();
+        print_new_board();
         if (q == 's') {
             i = -1;
             int exit = 0;
