@@ -34,3 +34,8 @@ char **board()
        arr[1][i]= p;
        arr[6][i]= p -32;
     }
+    return arr;
+}
+
+void print_new_board(char **arr)
+{
