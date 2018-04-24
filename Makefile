@@ -11,8 +11,10 @@ flags = -g3 -O0 -Wall -Werror
 
 
 .PHONY: clean adddir open gdb
-adddir :
-	    mkdir build bin
+build:
+	    mkdir build
+bin:
+	    mkdir bin
 clean :
 	    rm -rf ./build/ ./bin/
 open :
